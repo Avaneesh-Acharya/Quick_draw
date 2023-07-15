@@ -7,3 +7,25 @@ timer_check=""
 draw_sketch=""
 answer=""
 score=0
+function setup() {
+    canvas=createCanvas(300, 300)
+    canvas.center()
+    background("cornsilk")
+}
+function preload() {
+    
+}
+function draw() {
+    
+}
+function clear_canvas() {
+    background("cornsilk")
+}
+function timer() {
+    c=0
+    setInterval(function () {
+        c=c+1
+        document.getElementById("time").innerHTML="timer: "+c
+    }, 1000 )
+}
+console.log(timer())
